@@ -1,0 +1,26 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="container">
+<a href="#" id="start-over" onclick="location.reload(true)" style="font-size:1.3em;font-family:sans-serif">Start Over</a>
+    <div id="game-start">
+      <div id="buttons">
+      <a id="ai" href="#" onclick="start_ai()">1 Player</a>
+      <a id="user" href="#" onclick="start_user()">2 Players</a>
+      </div>
+    </div>
+    <div id="middle-line"></div>
+    <div id="score">
+        <span id="score-left">0</span>
+        <span id="score-right">0</span>
+    </div>
+    <div id="leftPad" class="paddle"></div>
+    <div id="rightPad" class="paddle"></div>
+    <div id="ball"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+	font-family: sans-serif;
+	background: #FAFAFA;
+	overflow: hidden;
+}
+#container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #222;
+	box-shadow: 0 0 5px #444;
+}
+#middle-line {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+	background: #fff;
+	width: 5px;
+}
+#score {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-size: 4em;
+	color: #fff;
+}
+#score span {
+	margin: 0 20px;
+}
+.paddle {
+	position: absolute;
+	width: 20px;
+	height: 100px;
+	background-color: #fff;
+  z-index:999;
+}
+#leftPad{
+	left: 0;
+}
+#rightPad{
+	right: 0;
+}
+#ball {
+	position: absolute;
+	//width: 20px;
+	//top: 200px;
+	//left: 200px;
+	//height: 20px;
+	background: #fff;
+  border-radius:0px;
+}
+.goal{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #333;
+	width: 20px;
+}
+#right-goal{
+  right:0;
+  left:auto;
+}
+#game-start{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#404055;
+}
+#buttons{
+position:absolute;
+width:100%;
+text-align:center;
+top:50%;
+left:0;
+transform:translate(0,-50%);
+}
+#game-start a{
+text-decoration:none;
+background:#505065;
+color:white;
+padding:35px;
+display:inline-block;
+margin:20px;
+}
+#start-over{
+background:#444;
+position:absolute;
+left:50%;
+transform:translate(-50%,0);
+top:-55px;
+padding:15px;
+color:white;
+text-decoration:none;
+display:none;
+}
